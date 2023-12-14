@@ -28,7 +28,8 @@ st.write(df)
 loaded_model = pickle.load(open("modelSvrRegressions.h5", "rb"))
 
 prediction = loaded_model.predict(df)
-prediction.columns = ['Sales']
+# prediction.columns = ['Sales']
+st.write(type(prediction))
 
 st.subheader('Prediction')
 st.write(prediction) 
