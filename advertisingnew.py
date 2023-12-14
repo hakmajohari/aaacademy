@@ -3,9 +3,9 @@ import pandas as pd
 import pickle
 
 st.write("""
-# Advertising Prediction Value
+# Sale Prediction Value
 
-This app predicts the **Advertiding channel** type!
+This app predicts the **Sale Prediction Value**!
 """)
 
 st.sidebar.header('User Input Parameters')
