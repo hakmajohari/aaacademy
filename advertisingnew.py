@@ -25,7 +25,7 @@ df = user_input_sale()
 st.subheader('User Input parameters')
 st.write(df)
 
-loaded_model = pickle.load(open("modelSvrRegression.h5", "rb"))
+loaded_model = pickle.load(open("modelSvrRegressions.h5", "rb"))
 
 prediction = loaded_model.predict(df)
 
