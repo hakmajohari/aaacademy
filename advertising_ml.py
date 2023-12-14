@@ -40,8 +40,8 @@ st.subheader('Class labels and their corresponding index number')
 st.write(advertising.target_names)
 
 st.subheader('Prediction')
-st.write(advertising.target_names[prediction])
-#st.write(prediction)
+#st.write(advertising.target_names[prediction])
+st.write(prediction)
 
 st.subheader('Sale Prediction Probability')
 st.write(prediction_proba)
