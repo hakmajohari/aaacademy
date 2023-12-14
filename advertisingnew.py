@@ -20,7 +20,7 @@ def user_input_advertising():
         sale = pd.DataFrame(data, index=[0])
         return sale
 
-df = user_input_sale()
+df = user_input_advertising()
 
 st.subheader('User Input parameters')
 st.write(df)
