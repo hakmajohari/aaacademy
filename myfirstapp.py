@@ -14,7 +14,7 @@ if option=='line chart':
             np.random.randn(20, 3),
             columns=['a', 'b', 'c'])
 
-    st.line_chart(chart_data)
+                st.line_chart(chart_data)
 
 elif option=='map':
             map_data = pd.DataFrame(
