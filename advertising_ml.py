@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 from sklearn import datasets
-from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
 # Advertising Prediction Value
@@ -32,7 +31,6 @@ advertising = datasets.load_advertising()
 X = advertising.data
 Y = advertising.target
 
-clf = RandomForestClassifier()
 clf.fit(X, Y)
 
 prediction = clf.predict(df)
