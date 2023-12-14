@@ -5,7 +5,7 @@ import pickle
 st.write("""
 # Sale Prediction Value
 
-This app predicts the **Sale Prediction Value**!
+This app predicts the **Sale Prediction Value** in TV, Radio & Newspaper!
 """)
 
 st.sidebar.header('User Input Parameters')
@@ -22,7 +22,7 @@ def user_input_advertising():
 
 df = user_input_advertising()
 
-st.subheader('User Input parameters')
+st.subheader('User Input values')
 st.write(df)
 
 loaded_model = pickle.load(open("modelSvrRegressions.h5", "rb"))
@@ -32,5 +32,5 @@ prediction = loaded_model.predict(df)
 # st.write(type(prediction))
 sales = pd.DataFrame(prediction, columns=['Sales'])
 
-st.subheader('Prediction')
+st.subheader('Sales Prediction')
 st.write(sales) 
